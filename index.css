@@ -1,0 +1,11 @@
+/* Color styles: 
+    Blues: #072AC8, #43D2FF, #A2D6F9, #D1EDFF, #ECF7FF
+    Greys: #292E47, #6B708D, #F2F4FC
+    Yellow: #FFC600
+*/
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
