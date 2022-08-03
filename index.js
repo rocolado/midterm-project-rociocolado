@@ -1,8 +1,3 @@
-// Hacer una llamada GET a 
-// https://jsonplaceholder.typicode.com/posts para 
-// pedir la información os de l3 primeros posts y pintarla 
-// en la sección de “Recent projects”.
-
 // Añadir el menú hamburguesa en mobile
 
 function getPostsHome() {
