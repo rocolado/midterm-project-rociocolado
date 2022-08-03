@@ -17,10 +17,10 @@ function getPostsHome() {
             postData += `
             <div>
                 <img src="../images/recent-projects/${project.id}.jpg" alt="Post photo">
-                <p>Simplify</p>
                 <p>${project.title}</p>
+                <p>${project.body}</p>
 
-                <a href="recent-projects/projects.html">Learn More</a>
+                <a href="" id="learn-more-${project.id}">Learn More</a>
             </div>
             `;
 

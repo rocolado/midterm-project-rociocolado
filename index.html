@@ -13,43 +13,49 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="index.css">
-
-    <!-- Tailwind -->
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 
 <body>
     <header>
         <a href="#">
-            <img src="images/home/circle.svg" alt="Circle Agency Logo">
+            <img src="images/home/circle.svg" id="circle-logo" alt="Circle Agency Logo">
         </a>
 
         <nav>
+            <div id="display-menu">
+                <img src="images/home/icons8-menu2.svg" id="menu-icon" alt="Menu icon">
+            </div>
+
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="index.html" class="menu-link actual-page">Home</a></li>
+                <li><a href="#" class="menu-link">Projects</a></li>
+                <li><a href="#" class="menu-link">Services</a></li>
             </ul>
         </nav>
 
-        <a href="contact-us/contact-us.html">Contact Us</a>
+        <a href="contact-us/contact-us.html" class="button">Contact Us</a>
     </header>    
 
-    <section>
-        <div>
-            <h1>Empower Your Business With Stunning Design!</h1>
-    
-            <p>Circle is a digital design and development studio. We design
-            and develop astonishing websites and mobile apps.</p>
-    
-            <a href="#">See our work</a>
-            <a href="#">Get in touch</a>
+    <section id="hero">
+        <div id="hero-text">
+            <div>
+                <h1>Empower Your Business With Stunning Design!</h1>
+        
+                <p>Circle is a digital design and development studio. We design
+                and develop astonishing websites and mobile apps.</p>
+        
+            </div>
+            
+            <div id="hero-links">
+                <a href="#" class="button">Get in touch</a>
+                <a href="#" class="menu-link">See our work</a>    
+            </div>
         </div>
-
-        <div>
-            <img src="images/home/hero-image.png" alt="Hero">
-            <img src="images/home/card-1.png" alt="Card 1">
-            <img src="images/home/card-2.png" alt="Card 2">
+        
+        <div id="hero-photos">
+            <img src="images/home/card-1.png" id="card-1" alt="Card 1">
+            <img src="images/home/hero-image.png" id="hero-photo" alt="Hero">
+            <img src="images/home/card-2.png" id="card-2" alt="Card 2">
         </div>
     </section>
 

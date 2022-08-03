@@ -6,6 +6,302 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    background-color: #F2F4FC;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+/* shared */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.button {
+    color: #FFFFFF;
+    background-color: #072AC8;
+    padding: 15px 30px;
+}
+
+.button:hover {
+    background-color: #292E47;
+}
+
+.menu-link {
+    font-weight: 500;
+    color: #6B708D;
+}
+
+.menu-link:hover {
+    color: #072AC8;
+}
+
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+}
+
+header #circle-logo {
+    height: 18px;
+}
+
+header ul {
+    display: none;
+}
+
+header ul li .menu-link {
+    padding: 20px;
+}
+
+header ul li .actual-page {
+    color: #0082F3;
+}
+
+header .button {
+    display: none;
+}
+
+/* header #display-menu {
+    background-color: #6B708D;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+}
+
+.showMenu {
+    transform: translateY(0);
+} */
+
+header #display-menu #menu-icon {
+    height: 17px;
+}
+
+
+/* section hero */
+#hero {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #292E47;
+    margin: 20px 0px 30px 0px;
+}
+
+#hero p {
+    line-height: 150%;
+    color: #6B708D;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#hero #hero-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero #hero-links .button {
+    margin-bottom: 20px;
+}
+
+#hero #hero-links .menu-link {
+    font-weight: 400;
+}
+
+#hero #hero-photos {
+    margin-top: 40px;
+}
+
+#hero #hero-photos #hero-photo {
+    width: 560px;
+    max-width: 100%;
+    display: flex;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hero #card-1,
+#hero #card-2 {
+    display: none;
+}
+
+
+
+#projects img {
+    width: 50px;
+}
+
+
+@media screen and (min-width: 480px) {
+    /* section hero */
+    h1 {
+        font-size: 40px;
+        line-height: 130%;
+    }
+
+    #hero #hero-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hero #hero-links .button {
+        margin-bottom: 0px;
+        margin-right: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* section hero */
+    h1 {
+        font-size: 60px;
+    }
+
+    #hero p {
+        font-size: 20px;
+    }
+
+    #hero #hero-photos {
+        position: relative;
+       
+    }
+
+    #hero #hero-photos #card-1 {
+        background-color: transparent;
+        width: 294px;
+        max-width: 375px;
+        display: inline-block;
+        position: absolute;
+        left: auto;
+        top: 0%;
+        right: 63%;
+        bottom: auto;
+    }
+
+    #hero #hero-photos #card-2 {
+        background-color: transparent;
+        width: 294px;
+        max-width: 375px;
+        display: inline-block;
+        position: absolute;
+        left: 63%;
+        top: auto;
+        right: auto;
+        bottom: -22%;
+    }
+
+    /* section clients */
+
+    /* section our services */
+
+}
+
+@media screen and (min-width: 992px) {
+    * {
+        max-width: 1100px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    /* header */
+    header {
+        padding: 0px 30px;
+        margin-top: 70px;
+    }
+
+    header ul {
+        display: flex;
+    }
+
+    header a:first-child {
+        margin-left: 0px;
+    }
+
+    header .button {
+        display: flex;
+        margin-right: 0px;
+    }
+    
+    header #menu-icon {
+        display: none;
+    }
+
+
+    /* section hero */
+    #hero {
+        flex-direction: row;
+        padding-top: 100px;
+    }
+
+    #hero #hero-text {
+        max-width: 530px;
+    }
+
+    h1,
+    #hero p {
+        text-align: left;
+    }
+
+    #hero p {
+        max-width: 435px;
+        margin-left: 0px;
+    }
+
+    #hero #hero-links {
+        display: flex;
+        justify-content: left;
+        flex-direction: row-reverse;
+    }
+
+    #hero #hero-links .menu-link {
+        margin: 0;
+    }
+
+    #hero #hero-links .button {
+        margin: 0px 40px 0px 20px;
+    }
+
+    #hero #hero-photos {
+        margin-top: 0px;
+    }
+    
+    #hero #hero-photos #hero-photo {
+        width: 800px;
+    }
+
+    #hero #hero-photos #card-1 {
+        left: -20%;
+    }
+
+    #hero #hero-photos #card-2 {
+        bottom: -20%;
+    }
+
+
+    /* section logos empresas */
+
+    /* section clients */
+
+
 }
