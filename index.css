@@ -145,8 +145,35 @@ h1 {
 }
 
 
+/* section brands */
+#brands {
+    padding: 0px 30px;
+}
 
-#projects img {
+#brands #grid {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-column-gap: 20px;
+    grid-row-gap: 16px;
+    justify-items: center;
+    margin-top: 70px;
+}
+
+#brands #grid div {
+    height: 96px;
+}
+
+#brands #grid div:last-child,
+#brands #grid #amazon {
+    display: none;
+}
+
+#projects img,
+#clients img,
+#profile {
     width: 50px;
 }
 
@@ -156,6 +183,12 @@ h1 {
     h1 {
         font-size: 40px;
         line-height: 130%;
+    }
+
+    #hero #hero-text {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #hero #hero-links {
@@ -177,13 +210,16 @@ h1 {
         font-size: 60px;
     }
 
+    #hero #hero-text {
+        max-width: 700px;
+    }
+    
     #hero p {
         font-size: 20px;
     }
-
+    
     #hero #hero-photos {
-        position: relative;
-       
+        position: relative;   
     }
 
     #hero #hero-photos #card-1 {
@@ -209,6 +245,12 @@ h1 {
         right: auto;
         bottom: -22%;
     }
+
+    /* section brands */
+    #brands #grid {
+        margin-top: 150px;
+    }
+
 
     /* section clients */
 
@@ -251,6 +293,7 @@ h1 {
     /* section hero */
     #hero {
         flex-direction: row;
+        align-items: center;
         padding-top: 100px;
     }
 
@@ -285,18 +328,33 @@ h1 {
     #hero #hero-photos {
         margin-top: 0px;
     }
-    
-    #hero #hero-photos #hero-photo {
-        width: 800px;
-    }
 
     #hero #hero-photos #card-1 {
         left: -20%;
     }
 
     #hero #hero-photos #card-2 {
+        right: -20%;
         bottom: -20%;
     }
+
+
+    /* section brands */
+    #brands #grid {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #brands #grid div:last-child {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #brands #grid #amazon {
+        display: flex;
+        width: 96px;
+    }
+
 
 
     /* section logos empresas */
