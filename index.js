@@ -15,7 +15,7 @@ function getPostsHome() {
                 <p class="recent-project-title">${project.title}</p>
                 <p class="recent-project-body">${project.body}</p>
 
-                <a href="" class="link-learn-more" id="learn-more-${project.id}">Learn More</a>
+                <a href="recent-projects/project-${project.id}" class="link-learn-more" id="learn-more-${project.id}">Learn More</a>
             </div>
             `;
 

@@ -118,18 +118,18 @@ h1 {
     color: #6B708D;
 }
 
-#form form input {
+#form form input,
+#form form #textarea {
     border: transparent;
     background-color: rgba(107, 112, 141, 0.1);
     width: 100%;
     height: 70px;
     outline: none;
-    padding-left: 20px;
+    padding: 20px;
     margin-top: 10px;
 }
 
 #form form #textarea {
-    width: 100%;
     height: 200px;
     overflow: auto;
 }
@@ -138,9 +138,28 @@ h1 {
     color: #FFFFFF;
     border: transparent;
     background-color: #072AC8;
+    cursor: pointer;
     width: 100%;
     height: 70px;
     padding-left: 20px;
+}
+
+#form form .button:hover {
+    background-color: #292E47;
+}
+
+#p-success {
+    font-size: 20px;
+    color: green;
+    text-align: center;
+    padding: 10px;
+}
+
+#p-error {
+    font-size: 20px;
+    color: red;
+    text-align: center;
+    padding: 10px;
 }
 
 
@@ -192,7 +211,25 @@ footer #footer-links:active {
     /* section form */
     h1 {
         font-size: 60px;
-        margin: 20px 0px 10px 0px;
+        margin: 20px 0px 80px 0px;
+    }
+
+    #form form #form-flex {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+    }
+
+    #form form #form-flex div:nth-child(1) {
+        width: 100%;
+        display: block;
+        margin-right: 10px;
+    }
+
+    #form form #form-flex div:nth-child(2) {
+        width: 100%;
+        display: block;
+        margin-left: 10px;
     }
 
 
@@ -211,7 +248,7 @@ footer #footer-links:active {
 
 @media screen and (min-width: 992px) {
     /* shared */
-    header, footer {
+    header, #form, footer {
         max-width: 1100px;
         margin-right: auto;
         margin-left: auto;
@@ -241,6 +278,11 @@ footer #footer-links:active {
         display: none;
     }
 
+
+    /* section form */
+    #form {
+        margin-top: 200px;
+    }
 
     /* footer */
     footer {
