@@ -22,33 +22,86 @@
         </a>
 
         <nav>
+            <div id="display-menu">
+                <img src="../images/home/icons8-menu2.svg" id="menu-icon" alt="Menu icon">
+            </div>
+
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="../index.html" class="menu-link actual-page">Home</a></li>
+                <li><a href="#" class="menu-link">Projects</a></li>
+                <li><a href="#" class="menu-link">Services</a></li>
             </ul>
         </nav>
 
-        <a href="../contact-us/contact-us.html">Contact Us</a>
+        <a href="../contact-us/contact-us.html" class="button">Contact Us</a>
     </header>
     
     <section id="post"></section>
 
+    <section id="recent-projects">
+        <h2>Other projects</h2>
+
+        <div id="projects">
+            <div class="container">
+                <img src="../images/recent-projects/2.jpg" alt="Post photo">
+                <p class="recent-project-title">Simplify</p>
+                <p class="recent-project-body">UI Design & App Development</p>
+
+                <a href="#" class="link-learn-more">Learn More</a>
+            </div>
+
+            <div class="container">
+                <img src="../images/recent-projects/3.jpg" alt="Post photo">
+                <p class="recent-project-title">Vectorify</p>
+                <p class="recent-project-body">User Experience Design</p>
+
+                <a href="#" class="link-learn-more">Learn More</a>
+            </div>
+
+            <div class="container">
+                <img src="../images/recent-projects/4.jpg" alt="Post photo">
+                <p class="recent-project-title">Orbit</p>
+                <p class="recent-project-body">UI Design</p>
+
+                <a href="#" class="link-learn-more">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="questions">
+        <h2>Do you have any questions?</h2>
+
+        <p>Let us help you!</p>
+
+        <form action="" method="">
+            <div id="mail">
+                <img src="../images/home/mail.svg" alt="Mail icon">
+                <input type="email" name="email" placeholder="Enter your email">
+            </div>
+
+            <div>
+                <input type="submit" class="button" value="Suscribe">
+            </div>
+        </form>
+    </section>
+
     <footer>
-        <a href="#">
-            <img src="../images/home/circle.svg" alt="Circle Agency Logo">
-        </a>
+        <div id="text-footer">
+            <a href="#">
+                <img src="../images/home/circle.svg" alt="Circle Agency Logo">
+            </a>
+    
+            <p>2972 Westheimer Rd. Santa Ana,<br>Illinois 85486</p>
+        </div>
 
-        <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
-
-        <ul>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-        </ul>
+        <div id="footer-links">
+            <a href="#">Team</a>
+            <a href="#">Services</a>
+            <a href="#">About Us</a>
+            <a href="#">Press</a>
+            <a href="#">Projects</a>
+            <a href="#">Privacy Policy</a>
+        </div>
     </footer>
 
     <script src="projects.js"></script>

@@ -13,6 +13,7 @@
     margin: 0;
 }
 
+
 /* shared */
 a {
     text-decoration: none;
@@ -39,6 +40,45 @@ ul {
 
 .menu-link:hover {
     color: #072AC8;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #292E47;
+    line-height: 36px;
+    margin: 20px 0px 30px 0px;
+}
+
+.container {
+    background-color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.container .recent-project-title,
+.container .recent-project-body {
+    line-height: 115%;
+    color: #292E47;
+    background-color: #FFFFFF;
+}
+
+.container .recent-project-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 30px 30px 20px 30px;
+}
+
+.container .recent-project-body {
+    font-weight: 400;
+    margin: 0px 30px 10px 30px;
+}
+
+.link-learn-more {
+    font-weight: 500;
+    color: #072AC8;
+    background-color: #FFFFFF;
+    display: block;
+    margin: 30px;
 }
 
 
@@ -171,14 +211,263 @@ h1 {
     display: none;
 }
 
-#projects img,
-#clients img,
-#profile {
-    width: 50px;
+
+/* section recent projects */
+#recent-projects {
+    padding: 0px 30px;
+}
+
+#recent-projects #projects {
+    display: flex;
+    flex-direction: column;
+}
+
+#recent-projects #projects .container img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    max-width: 100%;
 }
 
 
+/* section clients */
+#clients {
+    height: 450px;
+    background-color: #292E47;
+    background-image: url("images/home/orbit.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding: 0px 30px;
+    margin-top: 60px;
+}
+
+#clients h2 {
+    max-width: 400px;
+    line-height: 150%;
+    color: #FFFFFF;
+    background-color: transparent;
+    padding-top: 30px;
+    margin: 0;
+}
+
+#clients > p {
+    font-size: 24px;
+    color: #ffc600;
+    font-weight: 500;
+    line-height: 160%;
+    text-align: center;
+    background-color: transparent;
+    max-width: 560px;
+}
+
+#clients #client {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+#clients #client #profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    background-image: url("images/home/profile.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#clients #client #client-info {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+#clients #client #client-info p {
+    text-align: left;
+    background-color: transparent;
+    padding: 0;
+}
+
+#clients #client #client-info p {
+    color: #A2D6F9;
+}
+
+#clients #client #client-info p:last-child {
+    font-size: 13px;
+    color: #ECF7FF;
+}
+
+#clients img {
+    background-color: transparent;
+    position: absolute;
+    display: none;
+}
+
+
+/* section our services */
+#our-services {
+    padding: 0px 30px;
+    margin-top: 40px;
+}
+
+#our-services #services {
+    display: flex;
+    flex-direction: column;
+}
+
+#our-services #services .container .icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ECF7FF;
+    background-position: 50% 50%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+#our-services #services .container:nth-child(1) .icon {
+    background-image: url("images/home/1.svg");
+}
+
+#our-services #services .container:nth-child(2) .icon {
+    background-image: url("images/home/2.svg");
+}
+
+#our-services #services .container:nth-child(3) .icon {
+    background-image: url("images/home/3.svg");
+}
+
+
+/* section questions */
+#questions {
+    background-color: #FFC600;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 30px;
+    margin-top: 60px;
+}
+
+#questions h2 {
+    line-height: 150%;
+    text-align: left;
+    background-color: transparent;
+}
+
+#questions p {
+    text-align: center;
+    color: #6B708D;
+    background-color: transparent;
+}
+
+#questions form {
+    max-width: 100%;
+    background-color: transparent;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#questions form #mail {
+    width: 243px;
+    height: 80px;
+    background-color: #ECF7FF;
+    border: 1px solid #CCCCCC;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+#questions form #mail input,
+#questions form #mail img {
+    background-color: #ECF7FF;
+}
+
+#questions form #mail input {
+    width: 100%;
+    text-decoration: none;
+    border: transparent;
+    outline: none;
+    padding-left: 20px;
+}
+
+#questions form #mail input::placeholder {
+    color: #292E47;
+}
+
+#questions form div:nth-child(2) {
+    width: 243px;
+    background-color: transparent;
+}
+
+#questions form .button {
+    width: 100%;
+    height: 80px;
+    border: transparent;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px 100px 30px;
+    margin-top: 60px;
+}
+
+footer #text-footer {
+    text-align: center;
+}
+
+footer a img {
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+footer p {
+    line-height: 150%;
+    color: #6B708D;
+    max-width: 260px;
+}
+
+footer #footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    margin-top: 20px;
+}
+
+footer #footer-links:active {
+    color: red;
+}
+
+
+/* media queries */
 @media screen and (min-width: 480px) {
+    /* shared */
+    h2 {
+        font-size: 40px;
+    }
+
+
     /* section hero */
     h1 {
         font-size: 40px;
@@ -202,9 +491,29 @@ h1 {
         margin-bottom: 0px;
         margin-right: 40px;
     }
+
+
+    /* section questions  */
+    #questions h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #questions form #mail,
+    #questions form div:nth-child(2) {
+        width: 393px;
+    }
 }
 
+
 @media screen and (min-width: 768px) {
+    /* shared */
+    h2 {
+        text-align: left;
+        margin-bottom: 70px;
+    }
+
+
     /* section hero */
     h1 {
         font-size: 60px;
@@ -246,20 +555,125 @@ h1 {
         bottom: -22%;
     }
 
+
     /* section brands */
     #brands #grid {
         margin-top: 150px;
     }
 
 
+    /* section recent projects */
+    #recent-projects #projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 40px;
+    }
+
+
     /* section clients */
+    #clients {
+        height: 500px;
+    }
+
+    #clients h2 {
+        text-align: center;
+    }
+
+    #clients img {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+    
+    #clients img:nth-child(1) {
+        left: 0%;
+        top: 0%;
+        right: auto;
+        bottom: auto;
+    }
+
+    #clients img:nth-child(2) {
+        left: auto;
+        top: auto;
+        right: 0%;
+        bottom: 0%;
+        margin: 0% 10% 5% 0%;
+    }
+
+    #clients img:nth-child(3) {
+        left: 0%;
+        top: auto;
+        right: auto;
+        bottom: 0%;
+        margin-bottom: 5%;
+    }
+
+    #clients img:nth-child(4) {
+        left: auto;
+        top: 0%;
+        right: 0%;
+        bottom: auto;
+        margin-right: 10%;
+    }
+
 
     /* section our services */
+    #our-services #services {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 40px;
+    }
 
+    #our-services #services .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+    /* section questions */
+    #questions h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    #questions form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #questions form div:nth-child(2) {
+        width: 185px;
+    }
+
+    #questions form .button {
+        padding-right: 60px;
+        padding-left: 60px;
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+
+    /* footer */
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    footer #text-footer {
+        text-align: left;
+    }
 }
 
+
 @media screen and (min-width: 992px) {
-    * {
+    /* shared */
+    header, #hero, #brands, #recent-projects, #our-services, footer {
         max-width: 1100px;
         margin-right: auto;
         margin-left: auto;
@@ -343,6 +757,7 @@ h1 {
     #brands #grid {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
     
     #brands #grid div:last-child {
@@ -356,10 +771,52 @@ h1 {
     }
 
 
+    /* section recent projects */
+    #recent-projects {
+        margin-top: 200px;
+    }
 
-    /* section logos empresas */
+    #recent-projects #projects {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 
     /* section clients */
+    #clients {
+        height: 622px;
+        max-width: 1320px;
+        margin-top: 200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #clients h2 {
+        max-width: none;
+    }
+
+    #clients img {
+        width: 150px;
+        height: 150px;
+    }
 
 
+    /* section our services */
+    #our-services {
+        margin-top: 200px;
+    }
+
+
+    /* section questions */
+    #questions {
+        max-width: 1320px;
+        margin-top: 200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    /* footer */
+    footer {
+        margin-top: 200px;
+    }
 }

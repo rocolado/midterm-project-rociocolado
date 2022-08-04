@@ -24,10 +24,12 @@ const getPostVectorify = () => {
 const createHTML = (h1, post, date) => {
     let postData = `
         <h1>${h1}</h1>
-        <p>${post.title}</p>
-        <p>${date}</p>
+        <div id="text-post">
+            <p id="post-title">${post.title}</p>
+            <p id="post-date">Completed on ${date}</p>
+        </div>
         <img src="../images/recent-projects/${post.id}.jpg" alt="Post photo">
-        <p>${post.body}</p>
+        <p id="post-body">${post.body}</p>
         `;
 
     document.getElementById("post").innerHTML = postData;

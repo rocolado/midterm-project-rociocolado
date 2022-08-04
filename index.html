@@ -79,42 +79,17 @@
         </div>
     </section>
 
-    <section>
+    <section id="recent-projects">
         <h2>Recent Projects</h2>
 
-        <div id="projects">
-            <!-- <div>
-                <img src="" alt="">
-
-                <p>Simplify</p>
-                <p>UI Design & App Development</p>
-
-                <a href="">Learn More</a>
-            </div>
-            <div>
-                <img src="" alt="">
-
-                <p>Dashcoin</p>
-                <p>Web Development</p>
-
-                <a href="">Learn More</a>
-            </div>
-            <div>
-                <img src="" alt="">
-
-                <p>Vectorify</p>
-                <p>User Experience Design</p>
-
-                <a href="">Learn More</a> -->
-            </div>
-        </div>
+        <div id="projects"></div>
     </section>
 
     <section id="clients">
         <img src="images/home/memoji-1.png" alt="Memoji 1">
-        <img src="images/home/memoji-2.png" alt="Memoji 1">
-        <img src="images/home/memoji-3.png" alt="Memoji 1">
-        <img src="images/home/memoji-4.png" alt="Memoji 1">
+        <img src="images/home/memoji-2.png" alt="Memoji 2">
+        <img src="images/home/memoji-3.png" alt="Memoji 3">
+        <img src="images/home/memoji-4.png" alt="Memoji 4">
 
 
         <h2>Hear What Our Clients Have to Say</h2>
@@ -122,75 +97,83 @@
         <p>"Circle helped us through every stage of our startup.
         We really enjoyed working with you."</p>
 
-        <div>
-            <img src="images/home/profile.png" id="profile" alt="Profile">
-            <p>Kristin Watson</p>
-            <p>Booking.com</p>
+        <div id="client">
+            <div id="profile"></div>
+            <div id="client-info">
+                <p>Kristin Watson</p>
+                <p>Booking.com</p>
+            </div>
         </div>
     </section>
 
-    <section>
+    <section id="our-services">
         <h2>Our Services</h2>
 
-        <div>
-            <img src="images/home/1.svg" alt="Pen icon">
-
-            <p>User Interface Design</p>
-            <p>Circle provides you with a stunning user interface design
-            that is accessible to everyone.</p>
-            
-            <a href="#">Learn more</a>
-        </div>
-        <div>
-            <img src="images/home/2.svg" alt="Mouse pointer icon">
-
-            <p>User Experience Design</p>
-            <p>Circle always focuses on delivering the best user experience
-            to your customers.</p>
-            
-            <a href="#">Learn More</a>
-        </div>
-        <div>
-            <img src="images/home/3.svg" alt="File code icon">
-
-            <p>Application Development</p>
-            <p>We develop high-quality mobile and web applications using
-            the latest technology stack.</p>
-            
-            <a href="#">Learn More</a>
+        <div id="services">
+            <div class="container">
+                <div class="icon"></div>
+    
+                <p class="recent-project-title">User Interface Design</p>
+                <p class="recent-project-body">Circle provides you with a stunning user interface design
+                that is accessible to everyone.</p>
+                
+                <a href="#" class="link-learn-more">Learn more</a>
+            </div>
+            <div class="container">
+                <div class="icon"></div>
+    
+                <p class="recent-project-title">User Experience Design</p>
+                <p class="recent-project-body">Circle always focuses on delivering the best user experience
+                to your customers.</p>
+                
+                <a href="#" class="link-learn-more">Learn More</a>
+            </div>
+            <div class="container">
+                <div class="icon"></div>
+    
+                <p class="recent-project-title">Application Development</p>
+                <p class="recent-project-body">We develop high-quality mobile and web applications using
+                the latest technology stack.</p>
+                
+                <a href="#" class="link-learn-more">Learn More</a>
+            </div>
         </div>
     </section>
 
-    <section>
+    <section id="questions">
         <h2>Do you have any questions?</h2>
 
         <p>Let us help you!</p>
 
         <form action="" method="">
-            <div>
-                <img src="images/home/mail.svg" alt="">
+            <div id="mail">
+                <img src="images/home/mail.svg" alt="Mail icon">
                 <input type="email" name="email" placeholder="Enter your email">
             </div>
 
-            <input type="submit" value="Suscribe">
+            <div>
+                <input type="submit" class="button" value="Suscribe">
+            </div>
         </form>
     </section>
 
     <footer>
-        <a href="#">
-            <img src="images/home/circle.svg" alt="Circle Agency Logo">
-        </a>
+        <div id="text-footer">
+            <a href="#">
+                <img src="images/home/circle.svg" alt="Circle Agency Logo">
+            </a>
+    
+            <p>2972 Westheimer Rd. Santa Ana,<br>Illinois 85486</p>
+        </div>
 
-        <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
-
-        <ul>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-        </ul>
+        <div id="footer-links">
+            <a href="#">Team</a>
+            <a href="#">Services</a>
+            <a href="#">About Us</a>
+            <a href="#">Press</a>
+            <a href="#">Projects</a>
+            <a href="#">Privacy Policy</a>
+        </div>
     </footer>
 
     <script src="index.js"></script>

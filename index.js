@@ -10,12 +10,12 @@ function getPostsHome() {
 
         for (let project of recentProjects) {
             postData += `
-            <div>
+            <div class="container">
                 <img src="../images/recent-projects/${project.id}.jpg" alt="Post photo">
-                <p>${project.title}</p>
-                <p>${project.body}</p>
+                <p class="recent-project-title">${project.title}</p>
+                <p class="recent-project-body">${project.body}</p>
 
-                <a href="" id="learn-more-${project.id}">Learn More</a>
+                <a href="" class="link-learn-more" id="learn-more-${project.id}">Learn More</a>
             </div>
             `;
 

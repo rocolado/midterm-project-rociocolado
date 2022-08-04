@@ -6,6 +6,445 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    background-color: #F2F4FC;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+
+/* shared */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.button {
+    color: #FFFFFF;
+    background-color: #072AC8;
+    padding: 15px 30px;
+}
+
+.button:hover {
+    background-color: #292E47;
+}
+
+.menu-link {
+    font-weight: 500;
+    color: #6B708D;
+}
+
+.menu-link:hover {
+    color: #072AC8;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #292E47;
+    line-height: 36px;
+    margin: 20px 0px 30px 0px;
+}
+
+.container {
+    background-color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.container .recent-project-title,
+.container .recent-project-body {
+    line-height: 115%;
+    color: #292E47;
+    background-color: #FFFFFF;
+}
+
+.container .recent-project-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 30px 30px 20px 30px;
+}
+
+.container .recent-project-body {
+    font-weight: 400;
+    margin: 0px 30px 10px 30px;
+}
+
+.link-learn-more {
+    font-weight: 500;
+    color: #072AC8;
+    background-color: #FFFFFF;
+    display: block;
+    margin: 30px;
+}
+
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+}
+
+header #circle-logo {
+    height: 18px;
+}
+
+header ul {
+    display: none;
+}
+
+header ul li .menu-link {
+    padding: 20px;
+}
+
+header ul li .actual-page {
+    color: #0082F3;
+}
+
+header .button {
+    display: none;
+}
+
+/* header #display-menu {
+    background-color: #6B708D;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+}
+
+.showMenu {
+    transform: translateY(0);
+} */
+
+header #display-menu #menu-icon {
+    height: 17px;
+}
+
+
+/* post */
+#post {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: left;
+    color: #292E47;
+    margin: 20px 0px 30px 0px;
+}
+
+#post #post-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #6B708D;
+    margin-bottom: 10px;
+}
+
+#post #post-date {
+    font-size: 20px;
+    color: #292E47;
+}
+
+#post img {
+    width: 100%;
+    height: 444px;
+    object-fit: cover;
+    margin-top: 40px;
+}
+
+#post #post-body {
+    font-size: 20px;
+    color: #292E47;
+    margin-top: 70px;
+}
+
+
+/* other projects */
+#recent-projects {
+    padding: 0px 30px;
+    margin-top: 70px;
+}
+
+#recent-projects #projects {
+    display: flex;
+    flex-direction: column;
+}
+
+#recent-projects #projects .container img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+
+/* section questions */
+#questions {
+    background-color: #FFC600;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 30px;
+    margin-top: 60px;
+}
+
+#questions h2 {
+    line-height: 150%;
+    text-align: left;
+    background-color: transparent;
+}
+
+#questions p {
+    text-align: center;
+    color: #6B708D;
+    background-color: transparent;
+}
+
+#questions form {
+    max-width: 100%;
+    background-color: transparent;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#questions form #mail {
+    width: 243px;
+    height: 80px;
+    background-color: #ECF7FF;
+    border: 1px solid #CCCCCC;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+#questions form #mail input,
+#questions form #mail img {
+    background-color: #ECF7FF;
+}
+
+#questions form #mail input {
+    width: 100%;
+    text-decoration: none;
+    border: transparent;
+    outline: none;
+    padding-left: 20px;
+}
+
+#questions form #mail input::placeholder {
+    color: #292E47;
+}
+
+#questions form div:nth-child(2) {
+    width: 243px;
+    background-color: transparent;
+}
+
+#questions form .button {
+    width: 100%;
+    height: 80px;
+    border: transparent;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px 100px 30px;
+    margin-top: 60px;
+}
+
+footer #text-footer {
+    text-align: center;
+}
+
+footer a img {
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+footer p {
+    line-height: 150%;
+    color: #6B708D;
+    max-width: 260px;
+}
+
+footer #footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    margin-top: 20px;
+}
+
+footer #footer-links:active {
+    color: red;
+}
+
+
+/* media queries */
+@media screen and (min-width: 480px) {
+    /* shared */
+    h2 {
+        font-size: 40px;
+    }
+
+
+    /* section questions  */
+    #questions h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #questions form #mail,
+    #questions form div:nth-child(2) {
+        width: 393px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    /* shared */
+    h2 {
+        text-align: left;
+        margin-bottom: 70px;
+    }
+
+
+    /* post */
+    h1 {
+        font-size: 60px;
+        margin: 20px 0px 10px 0px;
+    }
+
+    #post #text-post {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #post #text-post #post-title {
+        font-size: 24px;
+        max-width: 400px;
+    }
+
+
+    /* section recent projects */
+    #recent-projects #projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 40px;
+    }
+
+
+    /* section questions */
+    #questions h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    #questions form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #questions form div:nth-child(2) {
+        width: 185px;
+    }
+
+    #questions form .button {
+        padding-right: 60px;
+        padding-left: 60px;
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+
+    /* footer */
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    footer #text-footer {
+        text-align: left;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    /* shared */
+    header, #post, #recent-projects, footer {
+        max-width: 1100px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    /* header */
+    header {
+        padding: 0px 30px;
+        margin-top: 70px;
+    }
+
+    header ul {
+        display: flex;
+    }
+
+    header a:first-child {
+        margin-left: 0px;
+    }
+
+    header .button {
+        display: flex;
+        margin-right: 0px;
+    }
+    
+    header #menu-icon {
+        display: none;
+    }
+
+
+    /* section recent projects */
+    #recent-projects {
+        margin-top: 200px;
+    }
+
+    #recent-projects #projects {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    /* section questions */
+    #questions {
+        max-width: 1320px;
+        margin-top: 200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+
+    /* footer */
+    footer {
+        margin-top: 200px;
+    }
 }
